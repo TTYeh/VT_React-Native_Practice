@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+
+</head>
+
+<body>
+    <img src="images/off.gif" id="light">
+    <br>
+    <button id="off">OFF</button>
+    <button id="on">ON</button>
+
+
+    <script>
+        document.getElementById('off').onclick=function() {
+            document.getElementById('light').src='images/off.gif'
+        }
+
+        document.getElementById('on').onclick=function() {
+            document.getElementById('light').src='images/on.gif'
+        }
+    </script>
+</body>

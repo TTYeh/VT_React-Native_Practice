@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+
+    <body>
+      <div id="demo0"></div>
+      <div id="demo1"></div>
+      <div id="demo2"></div>
+      <div id="demo3"></div>
+      <div id="demo4"></div>
+
+      <script>
+        let d0 =document.getElementById("demo0");
+        let d1 =document.getElementById("demo1");
+        let d2 =document.getElementById("demo2");
+        let d3 =document.getElementById("demo3");
+        let d4 =document.getElementById("demo4");
+        d0.innerHTML='123 <br>';
+        d1.innerHTML='456';
+        let r=Math.floor(Math.random()*5);
+
+        //即時函數
+        // (function(r){
+        //   const favorite=new Array('apple','banana','others')
+        //   d2.innerHTML="幸運水果:"+favorite(r)
+        // })(r);
+
+        let str = '';
+
+        const myfruit2=()=>{
+            str += '箭頭函數:水果芭樂'
+            d1.innerHTML=str;
+        }
+        console.log(str);
+        myfruit2();
+
+      </script>
+
+    </body>
+</html>
